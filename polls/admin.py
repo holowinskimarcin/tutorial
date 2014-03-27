@@ -3,6 +3,6 @@ import models
 # Register your models here.
 
 class PollsAdmin(admin.ModelAdmin):
-	list_display = ("id", "question_text")
+	list_display = ("id", "question")
 
-admin.site.register(models.Question, PollsAdmin)	
+admin.site.register(models.Poll, PollsAdmin)	
