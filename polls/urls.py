@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
     # ex: /polls/5/
     url(r'^(?P<poll_id>\d+)/$', views.detail, name='detail'),
+    # url(r'^emilka/(?P<poll_id>\d+)/$', views.detail, name='detail'),   mozna tak zrobic i bedzie dzialac
     # ex: /polls/5/results/
     url(r'^(?P<poll_id>\d+)/results/$', views.results, name='results'),
     # ex: /polls/5/vote/
